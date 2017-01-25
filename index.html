@@ -277,7 +277,8 @@
 				if (thePrefix.length > 0){
 					for(var i=0; i<cities.length; i++) {
 						cities[i].className="";
-						if(cities[i].textContent.startsWith(thePrefix)){
+						console.log(cities[i].textContent.toLowerCase(), thePrefix.toLowerCase())
+						if(cities[i].textContent.toLowerCase().startsWith(thePrefix.toLowerCase())) {
 							cities[i].className="match";
 						}
 					}
